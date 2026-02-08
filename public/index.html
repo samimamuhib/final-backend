@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="shell">
+    <div class="card" style="display:flex;gap:22px;align-items:center;flex-wrap:wrap;">
+      <div style="flex:1;min-width:240px;order:0;">
+        <h2 style="margin-top:0;">Welcome to Task Manager Web App</h2>
+        <p class="muted">Quick links to get you started</p>
+
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:16px;">
+          <a href="/login.html" class="btn btn-primary"> Login</a>
+          <a href="/register.html" class="btn btn-ghost"> Register</a>
+          <a href="/dashboard.html" class="btn btn-success"> Dashboard</a>
+        </div>
+      </div>
+
+      <div style="flex:0 0 320px;min-width:240px;order:1;">
+        <div class="left-column">
+          <div class="profile-summary">
+            <div class="profile-card">
+              <div class="avatar-wrap">
+                <img id="profileImage" class="avatar" src="" alt="Profile">
+              </div>
+              <div>
+                <div class="profile-name">Samima Muhib</div>
+                <div class="profile-role">Student • Web Development</div>
+                <div class="socials" style="margin-top:8px">
+                  <a href="mailto:samima@example.com">Email</a>
+                  <a href="#">GitHub</a>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="bio-box">
+            <div class="code-box"><pre>I’m Samima Muhib, a student passionate about technology, programming, and problem-solving.
+
+I focus on backend development, APIs, and databases, and I learn by building hands-on projects.
+
+This space shares my projects and what I learn along the way.</pre></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
