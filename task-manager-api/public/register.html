@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="shell">
+    <div class="card">
+      <div class="nav">
+        <div class="brand">
+          <div class="logo">TM</div>
+          <div>
+            <h2>Create Account</h2>
+            <div class="muted">Start managing your tasks</div>
+          </div>
+        </div>
+        <div class="links">
+          <a href="/" class="muted-link">Home</a>
+        </div>
+      </div>
+
+      <form onsubmit="event.preventDefault(); register();">
+        <div class="field">
+          <label class="muted">Username</label>
+          <input id="regUsername" placeholder="Your name" required>
+        </div>
+
+        <div class="field">
+          <label class="muted">Email</label>
+          <input id="regEmail" type="email" placeholder="you@domain.com" required>
+        </div>
+
+        <div class="field">
+          <label class="muted">Password</label>
+          <input id="regPassword" type="password" placeholder="Choose a password" required>
+        </div>
+
+        <div class="field">
+          <button class="btn btn-primary" id="regBtn">Register</button>
+        </div>
+      </form>
+
+      <div class="center">
+        <small class="muted">Already have an account? <a href="login.html" class="muted-link">Login</a></small>
+      </div>
+
+      <div id="message" style="margin-top:14px"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

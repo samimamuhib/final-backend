@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="shell">
+    <div class="card">
+      <div class="nav">
+        <div class="brand">
+          <div class="logo">TM</div>
+          <div>
+            <h2>Task Manager</h2>
+            <div class="muted">Sign in to manage your tasks</div>
+          </div>
+        </div>
+        <div class="links">
+          <a href="/" class="muted-link">Home</a>
+        </div>
+      </div>
+
+      <form onsubmit="event.preventDefault(); login();">
+        <div class="field">
+          <label class="muted">Email</label>
+          <input id="loginEmail" type="email" placeholder="you@domain.com" required>
+        </div>
+
+        <div class="field">
+          <label class="muted">Password</label>
+          <input id="loginPassword" type="password" placeholder="Password" required>
+        </div>
+
+        <div class="field">
+          <button class="btn btn-primary" id="loginBtn">Login</button>
+        </div>
+      </form>
+
+      <div class="center">
+        <small class="muted">Don’t have an account? <a href="register.html" class="muted-link">Register</a></small>
+      </div>
+
+      <div id="message" style="margin-top:14px"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
